@@ -16,6 +16,11 @@ spring:
             - spring-cloud-config
       label: master
 
+  rabbitmq:
+    host: 121.36.218.11
+    port: 5672
+    password: guest
+    username: guest
 
 
 eureka:
@@ -23,3 +28,14 @@ eureka:
     service-url:
       #设置与eureka server的交互的地址查询服务都需要依赖这个地址
       defaultZone: http://localhost:7001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
+
+#全局广播 curl -X POST "http://localhost:3344/actuator/bus-refresh/
+#定点通知 curl -X POST "http://localhost:3344/actuator/bus-refresh/cloud-config-client:3355"
+
+
