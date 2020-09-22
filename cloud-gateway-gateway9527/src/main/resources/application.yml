@@ -1,0 +1,43 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: route_1
+#          uri: http://localhost:8001
+          uri: lb://cloud-payment-service
+          predicates:
+            - Path=/payment/get/**
+#            - After=2020-09-21T15:56:40.728+08:00[Asia/Shanghai]
+#            - Cookie=username,cm
+#            - Header=X-Request-Id,\d+
+#            - Method=GET
+#            -Query=username,\d+
+
+        - id: route_2
+#          uri: http://localhost:8001
+          uri: lb://cloud-payment-service
+          predicates:
+            - Path=/payment/ok/**
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #设置与eureka server的交互的地址查询服务都需要依赖这个地址
+      defaultZone: http://localhost:7001/eureka/
+  #      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+  instance:
+    hostname: cloud-gateway-service
+    instance-id: gateway
+    prefer-ip-address: true
