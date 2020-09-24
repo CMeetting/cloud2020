@@ -2,3 +2,7 @@
 
 2020-09-24 11:14:22,436 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cloud-nacos-provider, ips: 192.168.0.24:9001_true,
 
+2020-09-24 11:30:05,620 INFO DEFAULT_GROUP@@cloud-nacos-provider {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.24:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-09-24 11:30:05,621 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cloud-nacos-provider, ips: 192.168.0.24:9002_true,192.168.0.24:9001_true,
+
