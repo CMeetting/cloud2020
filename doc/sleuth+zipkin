@@ -1,0 +1,2 @@
+springcloud F版以后直接启动jar包即可
+java -jar zipkin-server-2.12.9-exec.jar

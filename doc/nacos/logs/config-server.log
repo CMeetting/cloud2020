@@ -1,0 +1,88 @@
+2020-09-24 10:24:54,161 INFO notifyConnectTimeout:200
+
+2020-09-24 10:24:54,171 INFO notifySocketTimeout:8000
+
+2020-09-24 10:24:54,171 INFO isHealthCheck:true
+
+2020-09-24 10:24:54,171 INFO maxHealthCheckFailCount:12
+
+2020-09-24 10:24:54,171 INFO maxContent:10485760
+
+2020-09-24 10:33:57,122 INFO notifyConnectTimeout:200
+
+2020-09-24 10:33:57,130 INFO notifySocketTimeout:8000
+
+2020-09-24 10:33:57,131 INFO isHealthCheck:true
+
+2020-09-24 10:33:57,131 INFO maxHealthCheckFailCount:12
+
+2020-09-24 10:33:57,131 INFO maxContent:10485760
+
+2020-09-24 10:40:10,990 INFO notifyConnectTimeout:200
+
+2020-09-24 10:40:10,998 INFO notifySocketTimeout:8000
+
+2020-09-24 10:40:10,998 INFO isHealthCheck:true
+
+2020-09-24 10:40:11,002 INFO maxHealthCheckFailCount:12
+
+2020-09-24 10:40:11,002 INFO maxContent:10485760
+
+2020-09-24 10:43:14,142 INFO notifyConnectTimeout:200
+
+2020-09-24 10:43:14,147 INFO notifySocketTimeout:8000
+
+2020-09-24 10:43:14,147 INFO isHealthCheck:true
+
+2020-09-24 10:43:14,147 INFO maxHealthCheckFailCount:12
+
+2020-09-24 10:43:14,148 INFO maxContent:10485760
+
+2020-09-24 10:54:33,112 INFO notifyConnectTimeout:200
+
+2020-09-24 10:54:33,121 INFO notifySocketTimeout:8000
+
+2020-09-24 10:54:33,122 INFO isHealthCheck:true
+
+2020-09-24 10:54:33,122 INFO maxHealthCheckFailCount:12
+
+2020-09-24 10:54:33,122 INFO maxContent:10485760
+
+2020-09-24 10:58:24,112 INFO notifyConnectTimeout:200
+
+2020-09-24 10:58:24,116 INFO notifySocketTimeout:8000
+
+2020-09-24 10:58:24,116 INFO isHealthCheck:true
+
+2020-09-24 10:58:24,116 INFO maxHealthCheckFailCount:12
+
+2020-09-24 10:58:24,116 INFO maxContent:10485760
+
+2020-09-24 10:58:32,784 INFO use local db service for init
+
+2020-09-24 10:58:34,631 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2020-09-24 10:58:34,684 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2020-09-24 10:58:35,353 INFO use StandaloneDatabaseOperateImpl
+
+2020-09-24 10:58:37,626 WARN DumpService start
+
+2020-09-24 10:58:37,628 INFO start clear all config-info.
+
+2020-09-24 10:58:37,638 WARN clear all config-info failed.
+
+2020-09-24 10:58:37,639 WARN clear all config-info-tenant failed.
+
+2020-09-24 10:58:37,727 INFO start clear all config-info-beta.
+
+2020-09-24 10:58:37,727 WARN clear all config-info-beta failed.
+
+2020-09-24 10:58:37,727 WARN clear all config-info-beta-tenant failed.
+
+2020-09-24 10:58:37,745 INFO start clear all config-info-tag.
+
+2020-09-24 10:58:37,746 WARN clear all config-info-tag failed.
+
+2020-09-24 10:58:37,746 WARN clear all config-info-tag-tenant failed.
+
