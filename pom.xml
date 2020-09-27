@@ -32,6 +32,7 @@
     <module>cloudalibaba-nacos-provider9001</module>
     <module>cloudalibaba-nacos-provider9002</module>
     <module>cloudalibaba-nacos-consumer-order83</module>
+    <module>cloudalibaba-nacos-config-client3377</module>
   </modules>
   <packaging>pom</packaging>
 

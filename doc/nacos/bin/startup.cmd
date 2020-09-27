@@ -32,7 +32,8 @@ set FUNCTION_MODE_INDEX=-1
 set SERVER_INDEX=-1
 set EMBEDDED_STORAGE_INDEX=-1
 set EMBEDDED_STORAGE=""
-
+set PORT_INDEX=-1
+set PORT=8848
 
 set i=0
 for %%a in (%*) do (
@@ -40,6 +41,7 @@ for %%a in (%*) do (
     if "%%a" == "-f" ( set /a FUNCTION_MODE_INDEX=!i!+1 )
     if "%%a" == "-s" ( set /a SERVER_INDEX=!i!+1 )
     if "%%a" == "-p" ( set /a EMBEDDED_STORAGE_INDEX=!i!+1 )
+    if "%%a" == "-port" ( set /a PORT_INDEX=!i!+1 )
     set /a i+=1
 )
 
@@ -49,6 +51,7 @@ for %%a in (%*) do (
     if %FUNCTION_MODE_INDEX% == !i! ( set FUNCTION_MODE="%%a" )
     if %SERVER_INDEX% == !i! (set SERVER="%%a")
     if %EMBEDDED_STORAGE_INDEX% == !i! (set EMBEDDED_STORAGE="%%a")
+    if %PORT_INDEX% == !i! (set PORT="%%a")
     set /a i+=1
 )
 
@@ -90,7 +93,7 @@ rem set nacos log4j file location
 set "NACOS_LOG4J_OPTS=--logging.config=%BASE_DIR%/conf/nacos-logback.xml"
 
 
-set COMMAND="%JAVA%" %NACOS_JVM_OPTS% %NACOS_OPTS% %NACOS_CONFIG_OPTS% %NACOS_LOG4J_OPTS% nacos.nacos %*
+set COMMAND="%JAVA%" "-Dserver.port=%PORT%" %NACOS_JVM_OPTS% %NACOS_OPTS% %NACOS_CONFIG_OPTS% %NACOS_LOG4J_OPTS% nacos.nacos %*
 
 rem start nacos command
 %COMMAND%
